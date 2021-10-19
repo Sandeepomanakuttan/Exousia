@@ -1,0 +1,140 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Admin.FragmentUserAdd">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleUserAdd"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtReg"
+            android:layout_width="367dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="28dp"
+            android:ems="@integer/google_play_services_version"
+            android:gravity="center"
+            android:text="@string/user_add_page"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/etdName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="68dp"
+            android:background="@drawable/styleborder"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter House Owner Name"
+            android:inputType="textPersonName"
+            android:paddingStart="35dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_below="@+id/txtReg"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="38dp"
+            app:srcCompat="@drawable/ui" />
+
+        <EditText
+            android:id="@+id/edtDistrict"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etdName"
+            android:layout_alignStart="@+id/etdName"
+            android:layout_alignEnd="@+id/etdName"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styleborder"
+            android:gravity="center"
+            android:hint="Enter District Name"
+            android:layout_marginEnd="-2dp" />
+
+        <EditText
+            android:id="@+id/edtPanchayath"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtDistrict"
+            android:layout_alignStart="@+id/etdName"
+            android:layout_alignEnd="@+id/etdName"
+            android:layout_marginStart="-2dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styleborder"
+            android:gravity="center"            android:hint="Enter Panchayath Name"
+            android:layout_marginEnd="-3dp" />
+
+        <EditText
+            android:id="@+id/edtWardNo"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPanchayath"
+            android:layout_alignStart="@+id/edtPanchayath"
+            android:layout_alignEnd="@+id/edtPanchayath"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="-3dp"
+            android:background="@drawable/styleborder"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter your Ward No"
+            android:inputType="text|number" />
+
+
+        <EditText
+            android:id="@+id/edtHouseNo"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtWardNo"
+            android:layout_alignStart="@+id/edtWardNo"
+            android:layout_alignEnd="@+id/edtWardNo"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/styleborder"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter your HouseNo"
+            android:inputType="text|number" />
+
+       <Button
+           android:id="@+id/btnSubmit"
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:text="Submit"
+           android:layout_below="@id/edtHouseNo"
+           android:layout_alignStart="@+id/edtHouseNo"
+           android:layout_alignEnd="@+id/edtHouseNo"
+           android:layout_marginStart="0dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginEnd="0dp"
+           android:background="@drawable/background_button"/>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

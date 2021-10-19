@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Admin.Fragments_Admin.FragmentMassegeMain"
+    android:id="@+id/fra"
+    android:orientation="vertical">
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/message_page"
+        android:background="@color/purple_200"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleUsermsgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head" />
+
+<!--    <TextView-->
+
+<!--        android:id="@+id/txtsend"-->
+<!--        android:layout_width="314dp"-->
+<!--        android:layout_height="47dp"-->
+<!--        android:layout_below="@+id/head"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginTop="69dp"-->
+<!--        android:layout_marginEnd="3dp"-->
+<!--        android:background="@drawable/textborder"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Sent massege"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+
+<!--        android:id="@+id/txtRecive"-->
+<!--        android:layout_width="314dp"-->
+<!--        android:layout_height="47dp"-->
+<!--        android:layout_below="@+id/txtsend"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginTop="67dp"-->
+<!--        android:layout_marginEnd="97dp"-->
+<!--        android:background="@drawable/textborder"-->
+<!--        android:gravity="center"-->
+<!--        android:text="receive black"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold" />-->
+
+
+</RelativeLayout>

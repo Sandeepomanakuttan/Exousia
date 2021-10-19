@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "44398732613",
+    "firebase_url": "https://reforming-kerala-default-rtdb.firebaseio.com",
+    "project_id": "reforming-kerala",
+    "storage_bucket": "reforming-kerala.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44398732613:android:79acb95464a7378a018a2c",
+        "android_client_info": {
+          "package_name": "com.example.reformingkeralathroughdigitilization"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44398732613-8ccok26s5k4hqdid43ev2ucgousfjcmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA14gK1q6Q1xQ123Bl9eIpnEMoK2GfbQQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44398732613-8ccok26s5k4hqdid43ev2ucgousfjcmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

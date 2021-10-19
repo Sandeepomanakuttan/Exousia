@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    tools:context="UserSection.Registraction.Registration_form">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/proImage"
+        android:layout_width="131dp"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/pic" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proImage"
+        android:layout_alignStart="@+id/proImage"
+        android:layout_alignEnd="@+id/proImage"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="73dp"
+        android:paddingStart="60dp"
+        android:text="Sandeep"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_alignStart="@+id/txt"
+        android:layout_alignEnd="@+id/txt"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="Sandeep"
+        android:paddingStart="60dp"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_below="@id/txtPosition"
+        android:layout_marginTop="-4dp"
+        app:srcCompat="@drawable/ui" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="336dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="38dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icPerson"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/Myprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:text="My Profile"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/linearlayout1"
+        android:layout_alignStart="@+id/linearlayout1"
+        android:layout_alignEnd="@+id/linearlayout1"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="9dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icAuthority"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_author" />
+
+        <TextView
+            android:id="@+id/txtAuthority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:text="My Authorities"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout3"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout2"
+        android:layout_alignStart="@+id/linearlayout2"
+        android:layout_alignEnd="@+id/linearlayout2"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="-8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icMessage"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_message" />
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:text="My Message"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout4"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout3"
+        android:layout_alignStart="@+id/linearlayout3"
+        android:layout_alignEnd="@+id/linearlayout3"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icSetting"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_setting" />
+
+
+        <TextView
+            android:id="@+id/txtSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:text="Setting"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout5"
+        android:layout_width="229dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/linearlayout4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="55dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icLogout"
+            android:layout_width="61dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logout" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

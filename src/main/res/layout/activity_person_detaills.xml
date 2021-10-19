@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/borderforview"
+    tools:context="UserSection.Registraction.PersonDetaills">
+
+
+    <TextView
+        android:id="@+id/txtReg"
+        android:layout_width="393dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/reg"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/pic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_below="@+id/txtReg"
+        android:layout_alignParentStart="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/ui"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.166"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginStart="15dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:background="@drawable/styleborder"
+                android:hint="Enter your Name"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of birth"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etdDob"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/styleborder"
+                android:hint="Enter your Date"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adhaar uid"
+                android:layout_marginStart="10dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etdAdhaar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:background="@drawable/styleborder"
+                android:hint="Enter your Uid"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Married status"
+                android:textSize="14dp" />
+
+            <RadioGroup
+                android:id="@+id/etdMarried"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/styleborder"
+                >
+                <RadioButton
+                    android:id="@+id/single"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="single"
+                    android:checked="true"
+                    android:onClick="cheked"
+                    android:textSize="14dp"/>
+
+                <RadioButton
+                    android:id="@+id/maried"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="cheked"
+                    android:text="Maried"
+                    android:textSize="14dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father Name"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etdFather"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:background="@drawable/styleborder"
+                android:hint="Enter your Father name"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mather Name"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etdMatherName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22.5dp"
+                android:background="@drawable/styleborder"
+                android:hint="Enter your Mather Name"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_marginStart="15dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etdAddress"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:background="@drawable/styleborder"
+                android:hint="Enter your Address"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RIT No"
+                android:textSize="14dp"
+                android:layout_marginStart="15dp"/>
+
+            <EditText
+                android:id="@+id/etdRIT"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:background="@drawable/styleborder"
+                android:hint="Enter your RIT No"
+                android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anual income"
+                android:textSize="14dp"
+                />
+
+            <EditText
+                android:id="@+id/etdAnual"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:background="@drawable/styleborder"
+                android:hint="As per Rit"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/background_light"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Regbutton"
+                android:layout_width="257dp"
+                android:layout_height="35dp"
+                android:background="@drawable/background_button"
+                android:text="Register"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

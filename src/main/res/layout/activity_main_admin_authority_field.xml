@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context="MainAdmin.main_admin_authority_field">
+
+
+    <TableLayout
+        android:id="@+id/simpleTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+
+            android:id="@+id/firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/txtPanchayath"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textborder"
+                android:padding="18dip"
+                android:text="Panchayath"
+                android:paddingStart="30dp"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:id="@+id/txtVillege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textborder"
+                android:padding="18dip"
+                android:text="Villege"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/bottomnav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editsearch"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textborder"
+                android:hint="serach...."
+                android:padding="5dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgsearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/search"
+                app:civ_circle_background_color="@color/black" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/layoutsearch"
+            android:layout_width="match_parent"
+            android:layout_height="615dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/linearlayout1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/layoutpanchayath"
+        android:layout_width="match_parent"
+        android:layout_height="615dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleTableLayout"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/layoutVillage"
+        android:layout_width="match_parent"
+        android:layout_height="615dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleTableLayout"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomnav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:background="@drawable/gradientbackground"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/pname"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Autority Type "
+                android:textColor="@color/purple_200"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/styleborder"
+                android:entries="@array/category"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/prograss"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/Authorityname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Authority Place"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edx_AthorityName"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:background="@drawable/styleborder"
+                android:hint="Authority Name"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="User Name"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/usd_txt"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:background="@drawable/styleborder"
+                android:hint="Enter Username"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/pass"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Password"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etdpass"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:background="@drawable/styleborder"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Name of Admin"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/adm_pan"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/styleborder"
+                android:hint="Name of Admin"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="175dp"
+                android:layout_height="30dp"
+                android:background="@drawable/background_button"
+                android:gravity="center"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/simpleTableLayout"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/botton_navigatuon"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

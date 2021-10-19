@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    tools:context=".Login_page">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="140dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/lineyellow"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <EditText
+        android:id="@+id/edittxtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittxtName"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="-37dp"
+        android:background="@drawable/styleborder"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <TextView
+        android:id="@+id/txtcreate"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittxtPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="115dp"
+        android:text="Do you Create New One"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/edittxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="-37dp"
+        android:background="@drawable/styleborder"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittxtPassword"
+        android:layout_alignStart="@+id/edittxtPassword"
+        android:layout_alignEnd="@+id/edittxtPassword"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/background_button"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        app:srcCompat="@drawable/ui"
+        />
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="615dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="68dp" />
+</RelativeLayout>

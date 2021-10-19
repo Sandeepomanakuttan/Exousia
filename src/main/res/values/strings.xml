@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">DigitilizedAuthority</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="we_will_send_you_an_one_time_password_on_this_mobile_no">We will send you an one time password on this mobile no</string>
+    <string name="enter_your_mobile_number">Enter Your Mobile Number</string>
+    <string name="_91">+91-</string>
+    <string name="_1234567890">1234567890</string>
+    <string name="enter_the_otp_sent_to">Enter the OTP sent to</string>
+    <string name="don_t_receive_the_otp">Don\'t receive the OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="verify">Verify</string>
+    <string name="do_you_create_new_one">Do you create new One?</string>
+    <string name="nameerror">Enter a valid User Name</string>
+    <string name="passworderror">Enter a valid Password</string>
+    <string name="reg">Registration Form</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string-array name="category">
+        <item>select Authority</item>
+        <item>Village</item>
+        <item>Panchayath</item>
+    </string-array>
+
+    <string-array name="wrkcategory">
+        <item>select category</item>
+        <item>Humen Development</item>
+        <item>House Loan</item>
+        <item>Scholarship</item>
+        <item>KudumpaSree Loan</item>
+    </string-array>
+
+    <string-array name="schemeType">
+        <item>select Scheme</item>
+        <item>Cash</item>
+        <item>Equitment</item>
+    </string-array>
+
+    <string-array name="District">
+        <item>select District</item>
+        <item>Thiruvandhapuram</item>
+        <item>Kollam</item>
+        <item>Pathanamthitta</item>
+        <item>Alappuzha</item>
+        <item>Kottayam</item>
+        <item>Idukki</item>
+        <item>Eranakulam</item>
+        <item>Thrissur</item>
+        <item>Palakkadu</item>
+        <item>Malappuram</item>
+        <item>wayanad</item>
+        <item>Kozhikode</item>
+        <item>Kannur</item>
+        <item>Kasargod</item>
+    </string-array>
+
+    <string-array name="Panchayath">
+        <item>select Pachayath</item>
+        <item>Thiruvandhapuram</item>
+        <item>Kollam</item>
+        <item>Pathanamthitta</item>
+        <item>Alappuzha</item>
+        <item>Kottayam</item>
+        <item>Idukki</item>
+        <item>Eranakulam</item>
+        <item>Thrissur</item>
+        <item>Palakkadu</item>
+        <item>Malappuram</item>
+        <item>wayanad</item>
+        <item>Kozhikode</item>
+        <item>Kannur</item>
+        <item>Kasargod</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update">Update login table</string>
+    <string name="message_page">Message Page</string>
+    <string name="exousia">Exousia</string>
+    <string name="todo">TODO</string>
+    <string name="we_digitalized_all_your_government_authorities">We Digitalized All your Government Authorities</string>
+    <string name="from">From</string>
+    <string name="sandeep">Sandeep</string>
+    <string name="type_your_message">Type Your Message...</string>
+    <string name="user_add_page">User Add Page</string>
+
+</resources>
